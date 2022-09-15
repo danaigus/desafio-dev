@@ -1,27 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 @font-face {
   font-family: Titillium;
-  src: url(TitilliumWeb/TitilliumWeb-Regular.ttf);
+  src: url(TitilliumWeb-Regular.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: Titillium;
-  src: url(TitilliumWeb/TitilliumWeb-Bold.ttf);
+  src: url(TitilliumWeb-Bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: Montserrat;
-  src: url(Montserrat/Montserrat-Regular.ttf);
+  src: url(Montserrat-Regular.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: Montserrat;
-  src: url(Montserrat/Montserrat-Bold.ttf);
+  src: url(Montserrat-Bold.ttf);
   font-weight: bold;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url(OpenSans/OpenSans-Regular.ttf);
+  src: url(OpenSans-Regular.ttf);
   font-weight: normal;
 }
 
@@ -82,6 +82,7 @@ ul{
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .header-topbar {
@@ -376,6 +377,12 @@ ul{
   padding-bottom: 40px;
 }
 
+.news-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .news-text {
   font-size: 16px;
   line-height: 23px;
@@ -462,4 +469,29 @@ ul{
   font-family: 'Open Sans', sans-serif;
   display: flex;
   gap: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .news-section {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  
+  .news-content {
+    justify-content: center;
+  }
+
+  .footer-infos {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-logos {
+    display: flex;
+  }
+
+  .logos-row {
+    gap: 20px;
+    align-items: center;
+  }
 }
