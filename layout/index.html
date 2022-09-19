@@ -11,31 +11,71 @@
   <header class="header">
     <div class="header-topbar">Acompanhe as melhores promoções disponíveis aqui na Maeztra.</div>
     <div class="header-middle">
-      <!-- Hamburger icon -->
-      <input class="side-menu" type="checkbox" id="side-menu"/>
-      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-      <!-- Logo -->
-      <a href="#" class="logo-image">
-        <img src="logo-maeztra-novo.png" alt="logo maeztra" title="Maeztra">
+      <div class="header-middle-c container">
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <div class="logo-image">
+          <a href="#!">
+            <img src="logo-maeztra-novo.png" alt="logo maeztra" title="Maeztra" width="110">
+          </a>
+        </div>
+        <a href="#!" class="search-mobile">
+          <img src="icon-search.svg" alt="pesquisa" height="24">
+        </a>
+        <div class="search-box">
+          <input
+            type="text"
+            name="pesquisa"
+            id="search-input"
+            placeholder="O Que Você Busca?"
+          >
+          <button class="button search-btn">Buscar</button>
+        </div>
+        <div class="hm-buttons">
+          <a href="#!" class="hm-button hmb-desk">
+            <img src="icon-profile.svg" alt="Minha conta" height="16">
+            <span class="hm-button-desc">Minha conta</span>
+          </a>
+          <a href="#!" class="hm-button hmb-desk">
+            <img src="icon-heart.svg" alt="Minha conta" height="16">
+            <span class="hm-button-desc">Minha conta</span>
+          </a>
+          <a href="#!" class="hm-button">
+            <img src="icon-bag.svg" alt="sacola de produtos" height="24">
+            <span class="hm-button-desc hmb-desk">Meu Carrinho</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <a href="#!" class="hb-link hb-news">
+        <img src="icon-dress.svg" alt="Novidades">
+        <span>Novidades</span>
       </a>
-      <img src="icon-search.svg" alt="pesquisa" width="24">
-      <img src="icon-bag.svg" alt="sacola de produtos" width="24">
+      <a href="#!" class="hb-link">Vestidos</a>
+      <a href="#!" class="hb-link">Roupas</a>
+      <a href="#!" class="hb-link">Sapatos</a>
+      <a href="#!" class="hb-link">Lingerie</a>
+      <a href="#!" class="hb-link">Acessórios</a>
+      <a href="#!" class="hb-link">OUTLET</a>
     </div>
   </header>
   <section class="main-slider">
     <div class="slider-item">
-      <span class="slider-item-title">
-        Promoções de Outono
-      </span>
-      <span class="slider-item-text">
-        Confiras os melhores looks para combinar com você nesse Outono
-      </span>
-      <button class="button bold">Conferir</button>
+      <div class="slider-content container">
+        <span class="slider-item-title">
+          Promoções de Outono
+        </span>
+        <span class="slider-item-text">
+          Confiras os melhores looks para combinar com você nesse Outono
+        </span>
+        <button class="button bold">Conferir</button>
+      </div>
     </div>
   </section>
   <section class="info-section">
     <h4 class="text-center">Por que comprar na Maeztra?</h3>
-    <div class="cards">
+    <div class="cards container">
       <div class="info-card">
         <img class="info-icon" src="icon-earth.png" alt="globo" width="32">
         <div>
@@ -75,7 +115,7 @@
   </section>
   <section class="brands-section">
     <h3 class="section-header text-center">Marcas Parceiras</h3>
-    <div class="cards">
+    <div class="cards container">
       <img class="brand-card" src="brands-1.png" alt="comma">
       <img class="brand-card" src="brands-2.png" alt="melissa">
       <img class="brand-card" src="brands-3.png" alt="forever 21">
@@ -85,7 +125,7 @@
   </section>
   <section>
     <h3 class="section-header text-center">As Mais Pedidas</h3>
-    <div class="shelf">
+    <div class="shelf container">
       <div class="product-card">
         <img src="product-image-1.jpg" alt="Faux Suede Mini Skirt">
         <div class="product-details">
@@ -196,9 +236,9 @@
       </div>
     </div>
   </section>
-  <section class="news-section">
+  <section class="news-section container">
     <div class="news-content">
-      <h3 class="section-header">Lorem ipsum</h3>
+      <h3 class="news-header">Lorem ipsum</h3>
       <p class="news-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce
         proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget
@@ -216,57 +256,74 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="footer-infos">
-      <div class="footer-info bold">
-        <span>Informações</span>
-        <span>+</span>
+    <div class="footer-infos container">
+      <div class="fi-links">
+        <div class="footer-info bold">
+          <span>Informações</span>
+          <span>+</span>
+        </div>
+        <a href="#!" class="fi-link">Quem Somos</a>
+        <a href="#!" class="fi-link">Prazo de Envio</a>
+        <a href="#!" class="fi-link">Trocas e Devoluções</a>
+        <a href="#!" class="fi-link">Promoções e Cupons</a>
       </div>
-      <div class="footer-info bold">
-        <span>Minha Conta</span>
-        <span>+</span>
+      <div class="fi-links">
+        <div class="footer-info bold">
+          <span>Minha Conta</span>
+          <span>+</span>
+        </div>
+        <a href="#!" class="fi-link">Minha Conta</a>
+        <a href="#!" class="fi-link">Meus Pedidos</a>
+        <a href="#!" class="fi-link">Cadastre-se</a>
       </div>
-      <div class="footer-info bold">
-        <span>Onde nos Encontrar</span>
-        <span>+</span>
+      <div class="fi-links">
+        <div class="footer-info bold">
+          <span>Onde nos Encontrar</span>
+          <span>+</span>
+        </div>
+        <a href="#!" class="fi-link">Lojas</a>
+        <a href="#!" class="fi-link">Endereço</a>
       </div>
     </div>
-    <div class="footer-logos">
-      <div class="logos-row">
-        <a href="#!">
-          <img src="icon-facebook.png" alt="facebook" width="32">
-        </a>
-        <a href="#!">
-          <img src="icon-linkedin.png" alt="linkedin" width="32">
-        </a>
-        <a href="#!">
-          <img src="icon-instagram.png" alt="instagram" width="32">
-        </a>
-        <a href="#!">
-          <img src="icon-youtube.png" alt="youtube" width="32">
-        </a>
-      </div>
-      <div class="logos-row">
-        <a href="#!">
-          <img src="icon-visa.png" alt="visa" width="32">
-        </a>
-        <a href="#!">
-          <img src="icon-mastercad.png" alt="mastercard" width="32">
-        </a>
-        <a href="#!">
-          <img src="icon-visa.png" alt="visa" width="32">
-        </a>
-        <a href="#!">
-          <img src="icon-mastercad.png" alt="mastercard" width="32">
-        </a>
-      </div>
-      <div class="footer-tech">
-        <div>
-          <p>Powered by</p>
-          <img src="icon-vtex.png" alt="vtex">
+    <div class="bg-black">
+      <div class="footer-logos container">
+        <div class="logos-row">
+          <a href="#!">
+            <img src="icon-facebook.png" alt="facebook" width="32">
+          </a>
+          <a href="#!">
+            <img src="icon-linkedin.png" alt="linkedin" width="32">
+          </a>
+          <a href="#!">
+            <img src="icon-instagram.png" alt="instagram" width="32">
+          </a>
+          <a href="#!">
+            <img src="icon-youtube.png" alt="youtube" width="32">
+          </a>
         </div>
-        <div>
-          <p>Developed by</p>
-          <img src="icon-maeztra.png" alt="maeztra">
+        <div class="logos-row">
+          <a href="#!">
+            <img src="icon-visa.png" alt="visa" width="32">
+          </a>
+          <a href="#!">
+            <img src="icon-mastercad.png" alt="mastercard" width="32">
+          </a>
+          <a href="#!">
+            <img src="icon-visa.png" alt="visa" width="32">
+          </a>
+          <a href="#!">
+            <img src="icon-mastercad.png" alt="mastercard" width="32">
+          </a>
+        </div>
+        <div class="footer-tech">
+          <div>
+            <p>Powered by</p>
+            <img src="icon-vtex.png" alt="vtex">
+          </div>
+          <div>
+            <p>Developed by</p>
+            <img src="icon-maeztra.png" alt="maeztra">
+          </div>
         </div>
       </div>
     </div>
